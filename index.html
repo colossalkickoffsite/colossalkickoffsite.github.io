@@ -8,61 +8,46 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-      }
-      .video-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        filter: blur(5px); /* Add blur filter */
-      }
-      .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 0;
-      }
-      .centered-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        text-align: center;
-      }
-      .icon-row {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 20px;
-      }
-      .icon-row a {
-        margin: 10px;
-      }
-      .icon-row img {
-        height: 50px;
-        width: auto;
-      }
-      @media (max-width: 768px) {
-        .icon-row img {
-          height: 80px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="z-index: 2; background-color: #00000059"
+    >
+      <a class="navbar-brand" href="#">Colossal Kickoff</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meetthemonsters.html"
+              >Meet the Monsters</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/bhgCvT6meF"
+              >Join the Community</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
     <video class="video-background" autoplay loop muted>
       <source src="assets/video/BGVideo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
@@ -70,7 +55,7 @@
     <div class="overlay"></div>
     <div class="centered-content">
       <img src="assets/img/Logo.png" alt="Logo" class="img-fluid" />
-      <h1 style="color: white; text-align: center">Coming soon to PC</h1>
+      <h1>Coming soon to PC</h1>
       <div class="icon-row">
         <a href="https://discord.gg/bhgCvT6meF"
           ><img src="assets/img/discord.png" alt="Discord"
@@ -92,5 +77,8 @@
         /></a>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,105 @@
+body,
+html {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+  color: white;
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  z-index: 1;
+}
+.icon-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icon-row a {
+  margin: 10px;
+}
+.icon-row img {
+  height: 50px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .icon-row img {
+    height: 80px;
+  }
+}
+.content-section {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+body,
+html {
+  margin: 0;
+}
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(5px); /* Add blur filter */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+.icon-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.icon-row a {
+  margin: 10px;
+}
+.icon-row img {
+  height: 50px;
+  width: auto;
+}
+@media (max-width: 768px) {
+  .icon-row img {
+    height: 80px;
+  }
+}
