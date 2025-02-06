@@ -9,13 +9,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-dark"
       style="z-index: 2; background-color: #00000059"
     >
-      <a class="navbar-brand" href="#">Colossal Kickoff</a>
+      <a class="navbar-brand" href="index.html">Colossal Kickoff</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -33,7 +39,7 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Videos</a>
+            <a class="nav-link" href="videos.html">Videos</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Meet the Monsters</a>
@@ -65,7 +71,20 @@
           <div class="col-md-6 d-flex align-items-center">
             <div>
               <h2>Minotaur</h2>
-              <p>Placeholder text for Minotaur.</p>
+              <p>
+                Hailing from the Labyrinth of the Island of Crete, the Minotaur
+                was defeated by the hero Theseus thousands of years ago. When
+                the End Times began, though, the monster reemerged, hungering
+                for battle. This fearsome foe fights with a colossal axe, and
+                can harness the power of the Labyrinth to summon walls of earth
+                from the ground. By crashing into these walls with its
+                devastating charges, the shrapnel it sends flying can be lethal.
+              </p>
+              <p>
+                Home Country: Greece<br />
+                Likes: The sound of crunching bones<br />
+                Dislikes: Humans
+              </p>
             </div>
           </div>
         </div>
@@ -76,7 +95,20 @@
           <div class="col-md-6 d-flex align-items-center">
             <div>
               <h2>Akhlut</h2>
-              <p>Placeholder text for Akhlut.</p>
+              <p>
+                An apex predator of the far north, the Akhlut was feared by the
+                Inuit people. Resembling a half-Orca, half-Wolf, this beast had
+                not been seen for centuries. During the End Times, it seeks new
+                quarry: humankind. Capable of diving beneath both land and
+                water, this monster’s speed and cunning are unmatched. Plus, its
+                Howl ability can stop both warriors and the ball dead in their
+                tracks.
+              </p>
+              <p>
+                Home Country: Canada<br />
+                Likes: Playing fetch<br />
+                Dislikes: Fleas
+              </p>
             </div>
           </div>
         </div>
@@ -92,7 +124,21 @@
           <div class="col-md-6 d-flex align-items-center">
             <div>
               <h2>Gashadokuro</h2>
-              <p>Placeholder text for Gashadokuro.</p>
+              <p>
+                Taking the form of a towering skeletal monster, the Gashadokuro
+                is one of the most feared evil spirits by the people of Japan.
+                It consumes both the bodies and spirits of those who perish in
+                war and famine, although many thought it was just a legend. It
+                looms over the pitch with its colossal size, swiping and
+                crushing its foes, incinerating them with its fiery breath, and
+                summoning accursed shrines that cover the field in fiery Soul
+                Orbs.
+              </p>
+              <p>
+                Home Country: Japan<br />
+                Likes: Consuming the souls of the damned<br />
+                Dislikes: Paperwork
+              </p>
             </div>
           </div>
         </div>
@@ -107,7 +153,21 @@
           <div class="col-md-6 d-flex align-items-center">
             <div>
               <h2>Quetzalcoatl</h2>
-              <p>Placeholder text for Quetzalcoatl.</p>
+              <p>
+                Quetzalcoatl, which means “the feathered serpent”, was seen as
+                holy by the Aztec people. Said to have dominion over the sun and
+                the wind, this creature disappeared with the lost empire that
+                revered it. As the eclipse of the End Times neared, its wrath
+                became once more known by humanity. This monster devours all
+                warriors in its path, and grows itself in the process. It can
+                split off segments of its body into storm clouds, which it can
+                detonate as thunderbolts to damage enemies.
+              </p>
+              <p>
+                Home Country: Mexico<br />
+                Likes: Loud music<br />
+                Dislikes: Cold climates
+              </p>
             </div>
           </div>
         </div>
@@ -118,7 +178,118 @@
           <div class="col-md-6 d-flex align-items-center">
             <div>
               <h2>Sphinx</h2>
-              <p>Placeholder text for Sphinx.</p>
+              <p>
+                The Great Sphinx was one of the most iconic landmarks in Egypt
+                for generations. It was long thought to be just that: A
+                landmark. As the End Times began, it revealed its true form, the
+                monstrous master of riddles itself. An ever-wise master of
+                necromantic magic, the proud Sphinx summons undead mummies to do
+                its bidding on the pitch. The Sphinx can also place curses on
+                Warriors, corrupting them into joining the his vile army.
+              </p>
+              <p>
+                Home Country: Egypt<br />
+                Likes: His mummies<br />
+                Dislikes: His mummies, when he's having a bad day
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 style="text-align: center; color: white">Trading Cards</h1>
+      <h4 style="text-align: center; color: white">Click to flip!</h4>
+      <div class="container mx-auto">
+        <div class="row">
+          <div class="col-md-4 card-container">
+            <div class="card" onclick="this.classList.toggle('flipped')">
+              <div class="card-front">
+                <img
+                  src="assets/img/cards/MinotaurFront.png"
+                  class="img-fluid"
+                  alt="Minotaur Trading Card Front"
+                />
+              </div>
+              <div class="card-back">
+                <img
+                  src="assets/img/cards/MinotaurBack.png"
+                  class="img-fluid"
+                  alt="Minotaur Trading Card Back"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-container">
+            <div class="card" onclick="this.classList.toggle('flipped')">
+              <div class="card-front">
+                <img
+                  src="assets/img/cards/AkhlutFront.png"
+                  class="img-fluid"
+                  alt="Akhlut Trading Card Front"
+                />
+              </div>
+              <div class="card-back">
+                <img
+                  src="assets/img/cards/AkhlutBack.png"
+                  class="img-fluid"
+                  alt="Akhlut Trading Card Back"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-container">
+            <div class="card" onclick="this.classList.toggle('flipped')">
+              <div class="card-front">
+                <img
+                  src="assets/img/cards/GashaFront.png"
+                  class="img-fluid"
+                  alt="Gashadokuro Trading Card Front"
+                />
+              </div>
+              <div class="card-back">
+                <img
+                  src="assets/img/cards/GashaBack.png"
+                  class="img-fluid"
+                  alt="Gashadokuro Trading Card Back"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 card-container">
+            <div class="card" onclick="this.classList.toggle('flipped')">
+              <div class="card-front">
+                <img
+                  src="assets/img/cards/QuetzalFront.png"
+                  class="img-fluid"
+                  alt="Quetzalcoatl Trading Card Fronts"
+                />
+              </div>
+              <div class="card-back">
+                <img
+                  src="assets/img/cards/QuetzalBack.png"
+                  class="img-fluid"
+                  alt="Quetzalcoatl Trading Card Back"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 card-container">
+            <div class="card" onclick="this.classList.toggle('flipped')">
+              <div class="card-front">
+                <img
+                  src="assets/img/cards/SphinxFront.png"
+                  class="img-fluid"
+                  alt="Sphinx Trading Card Front"
+                />
+              </div>
+              <div class="card-back">
+                <img
+                  src="assets/img/cards/SphinxBack.png"
+                  class="img-fluid"
+                  alt="Sphinx Trading Card Back"
+                />
+              </div>
             </div>
           </div>
         </div>
