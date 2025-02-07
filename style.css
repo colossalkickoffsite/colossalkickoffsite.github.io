@@ -48,7 +48,7 @@ html {
 }
 @media (max-width: 768px) {
   .icon-row img {
-    height: 80px;
+    height: 40px;
   }
 }
 .content-section {
@@ -102,7 +102,7 @@ html {
 }
 @media (max-width: 768px) {
   .icon-row img {
-    height: 80px;
+    height: 50px;
   }
 }
 .card-container {
@@ -137,4 +137,13 @@ html {
 
 .flipped {
   transform: rotateY(180deg);
+}
+.ck-logo {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .ck-logo {
+    width: 100%;
+  }
 }
